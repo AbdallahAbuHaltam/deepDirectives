@@ -24,7 +24,13 @@
       </ul>
       <p appBasicHighlight>Style me with basic Directive</p>
       <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'">Style me with better Directive</p>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5">The Value is 5</p>
+        <p *ngSwitchCase="10">The Value is 10</p>
+        <p *ngSwitchCase="100">The Value is 100</p>
+        <p *ngSwitchCase="5000">The Value is 5000</p>
 
+      </div>
     </div>
   </div>
 </div>
